@@ -1,0 +1,15 @@
+<div class="user" ng-style="style">
+    <a href="#/tweets"><img src="img/back.png"/></a>
+
+    <div class="profile">
+        <img ng-src="{{ user.profile_image_url_bigger }}"/>
+
+        <h1>{{user.name}} (@{{user.screen_name}}) </h1>
+
+        <p>{{user.description}}</p>
+
+        <p>Tweets : {{user.statuses_count}}</p>
+
+        <p>Location : {{user.location}}</p>
+    </div>
+</div>

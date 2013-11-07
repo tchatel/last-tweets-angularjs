@@ -1,0 +1,9 @@
+<div class="user" ng-style="style">
+    <a href="#/tweets"><img src="img/back.png"/></a>
+
+    <h1>Latitude : {{tweet.coordinates.coordinates[1]}},
+        longitude : {{tweet.coordinates.coordinates[0]}}</h1>
+
+    <gmaps ng-if="tweet" center="map.center" zoom="map.zoom"></gmaps>
+
+</div>

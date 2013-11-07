@@ -1,0 +1,116 @@
+body {
+    background-color: #dadaff;
+    padding: 15px;
+    font-size: 1.3em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#filter {
+    background-color: white;
+    margin: 0.5em auto 0.5em auto;
+    padding: 0 1em 0 1em;
+    border: solid #aaa 1px;
+    border-radius: 6px;
+}
+
+#tweets {
+    background-color: white;
+    margin: 1em auto 1em auto;
+    padding: 0;
+    border: solid #aaa 1px;
+    border-radius: 6px;
+}
+#tweets div.tweet {
+    border-bottom: solid #aaa 1px;
+    padding: 0.3em;
+    font-family: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    min-height: 65px;
+}
+#tweets div.tweet:last-child {
+    border-bottom: none;
+}
+#tweets div.tweet img.avatar {
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    padding: 4px;
+}
+#tweets div.tweet p {
+    margin: 0.3em;
+    padding: 0;
+}
+#tweets div.tweet p.user {
+    font-weight: bold;
+}
+#tweets div.tweet p.user span.userid {
+    font-weight: normal;
+    color: grey;
+    padding-left: 0.5em;
+}
+#tweets div.tweet p.date {
+    float: right;
+    font-size: 0.8em;
+    color: grey;
+}
+
+.user {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.profile {
+    text-align: center;
+    min-width: 700px;
+    min-height: 550px;
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.profile img {
+    border: 3px solid darkslategray;
+    border-radius: 5px;
+    background-color:rgba(255,255,255,0.5);
+}
+.profile h1 {
+    background-color:rgba(255,255,255,0.5);
+    min-width: 100px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 6px;
+}
+.profile p {
+    background-color:rgba(255,255,255,0.5);
+    min-width: 100px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.gmaps {
+    width: 500px;
+    height: 400px;
+}
+
+input {
+    width: 10em;
+    font-size: 0.9em;
+}
+button {
+    font-size: 0.8em;
+}
+
+.error {
+    color: red;
+}
+
+

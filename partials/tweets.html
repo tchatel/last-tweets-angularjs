@@ -1,0 +1,21 @@
+    <h1>Last tweets about AngularJS <img ng-show="loading" src="img/ajax-loader.gif"/></h1>
+
+    <form id="filter" name="filterForm">
+        <p>
+            Full text filter: <input ng-model="search.text" name="fullText" ng-minlength="3"/>
+            <button ng-click="search.text = ''">Clear</button>
+            <span class="error" ng-show="filterForm.fullText.$error.minlength">filter too short!</span>
+        </p>
+    </form>
+
+    <div id="tweets">
+        <div class="tweet" ng-repeat="tweet in tweets | filter:search.text">
+            <a href="#/user/{{ tweet.user.id_str }}"><img class="avatar" ng-src="{{ tweet.user.profile_image_url }}"/></a>
+            <p class="date">{{ tweet.created_at |age }}</p>
+            <p class="user">{{ tweet.user.name }}
+                <span class="userid">@{{ tweet.user.screen_name }}</span>
+                <a ng-show="tweet.coordinates.type=='Point'" href="#/map/{{ tweet.id_str }}"><img src="img/gmaps.png"/></a></p>
+            <p class="text" ng-bind-html="tweet.text |linky"></p>
+        </div>
+    </div>
+
