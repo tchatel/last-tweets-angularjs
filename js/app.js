@@ -92,3 +92,10 @@ module.filter('age', function () {
 });
 
 
+module.filter('decode_html_entities', function () {
+    return function (input) {
+		return input.replace(/&amp;/g,'&');		
+    }
+});
+
+
