@@ -15,7 +15,7 @@
             <p class="user">{{ tweet.user.name }}
                 <span class="userid">@{{ tweet.user.screen_name }}</span>
                 <a ng-show="tweet.coordinates.type=='Point'" href="#/map/{{ tweet.id_str }}"><img src="img/gmaps.png"/></a></p>
-            <p class="text" ng-bind-html="tweet.text |linky"></p>
+            <p class="text" ng-bind-html="tweet.text | linky | decode_html_entities"></p>
         </div>
     </div>
 
